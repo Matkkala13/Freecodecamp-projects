@@ -1,8 +1,8 @@
 import numpy as np 
 
 def calculate(arrange):
-    if len(arrange) > 9:
-        raise ValueError('List must contain 9 numbers.')
+    if len(arrange) > 9 or len(arrange) < 9:
+        raise ValueError('List must contain nine numbers.')
 
     arr = np.array([arrange[:3], arrange[3:6], arrange[6:]])
 
@@ -39,5 +39,5 @@ def calculate(arrange):
     output_dict['sum']= sum_
     return output_dict
 
-test = [0,1,2,3,4,5,6,7,8]
-print(calculate(test))
+#test = [2,6,2,8,4,0,1,2]
+#print(calculate(test))
