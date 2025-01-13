@@ -183,4 +183,3 @@ def draw_box_plot():
     fig.savefig('box_plot.png')
     
     return fig
-draw_box_plot()
